@@ -2,6 +2,7 @@
     <div class="wrapper">
         <section id="navigation" class="container">
             <logo/> 
+            <p>{{text.body.hero}}</p>
         </section>
     </div>
 
@@ -13,7 +14,10 @@ import Logo from '~/components/Logo.vue'
 export default {
   components: {
     Logo
-  }
+  },
+    asyncData: async ({ app }) => ({
+    text: await app.$content('/pages').get('/home'),
+  }),
 }
 </script>
 
