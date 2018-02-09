@@ -1,0 +1,121 @@
+backend:
+  name: github
+  repo: wuwu/venohr
+  url: https://venohr.zknft.de
+
+media_folder: "static/uploads"
+public_folder: "/uploads"
+
+collections: # A list of collections the CMS should be able to edit
+  - name: "posts" # Used in routes, ie.: /admin/collections/:slug/edit
+    label: "Post" # Used in the UI, ie.: "New Post"
+    folder: "content/posts"
+    slug: "hr-advice/{{slug}}"
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields each document in this collection have
+      - {label: "Title", name: "title", widget: "string", tagname: "h1"}
+      - {label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DD hh:mma"}
+      - {label: "Cover Image", name: "image", widget: "image", required: false, tagname: ""}
+      - {label: "Body", name: "body", widget: "markdown"}
+    meta:
+      - {label: "SEO Description", name: "description", widget: "text"}
+  - label: "Pages"
+    name: "pages"
+    files:
+    - label: "Home Page"
+      name: "home"
+      file: "content/pages/home.yml"
+      fields:
+      - label: "Hero Section"
+        name: "hero"
+        widget: "object"
+        fields:
+          - {label: "Title", name: "title", widget: "markdown"}
+          - {label: "Intro", name: "intro", widget: "markdown"}
+          - label: "Features"
+            name: "features"
+            widget: "object"
+            fields:
+            - {label: "Feature 1", name: "one", widget: "string"}
+            - {label: "Feature 2", name: "two", widget: "string"}
+            - {label: "Feature 3", name: "three", widget: "string"}
+          - label: "Email Form"
+            name: "form"
+            widget: "object"
+            fields:
+            - {label: "Name Placeholder", name: "name", widget: "string"}
+            - {label: "Email Placeholder", name: "email", widget: "string"}
+            - {label: "Button Text", name: "button", widget: "string"}
+      - label: "Trusted By Section"
+        name: "trustedby"
+        widget: "object"
+        fields:
+          - {label: "Title", name: "title", widget: "markdown"}
+          - label: Logos
+            name: logos
+            widget: list
+            fields:
+              - {label: Image, name: image, widget: image}
+              - {label: Alt Text, name: alt, widget: string}
+          - {label: "Button", name: "button", widget: "string"}
+          - {label: "Button URL", name: "url", widget: "string"}
+      - label: "Who We Are Section"
+        name: "whoweare"
+        widget: "object"
+        fields:
+          - {label: "Subtitle", name: "subtitle", widget: "string"}
+          - {label: "Title", name: "title", widget: "markdown"}
+          - {label: "Body", name: "body", widget: "markdown"}
+          - {label: "Image", name: "image", widget: "image"}
+          - {label: "Image Caption", name: "caption", widget: "string"}
+          - {label: "Button Text", name: "button", widget: "string"}
+          - {label: "Button URL", name: "url", widget: "string"}
+      - label: "How We Work Section"
+        name: "howwework"
+        widget: "object"
+        fields:
+          - {label: "Subtitle", name: "subtitle", widget: "string"}
+          - {label: "Title", name: "title", widget: "markdown"}
+          - {label: "Body", name: "body", widget: "markdown"}
+          - {label: "Button Text", name: "button", widget: "string"}
+          - {label: "Button URL", name: "url", widget: "string"}
+          - label: Features
+            name: features
+            widget: list
+            fields:
+              - {label: Name, name: name, widget: string}
+          - {label: "Image", name: "image", widget: "image"}
+          - {label: "Image Caption", name: "caption", widget: "string"}
+    - label: "About Page"
+      name: "about"
+      file: "content/pages/about.yml"
+      fields:
+        - {label: Subtitle, name: subtitle, widget: string}
+        - {label: Title, name: title, widget: markdown}
+        - {label: Body, name: body, widget: markdown}
+        - {label: "Image", name: "image", widget: "image"}
+    - label: "Services Page"
+      name: "services"
+      file: "content/pages/services.yml"
+      fields:
+        - {label: Subtitle, name: subtitle, widget: string}
+        - {label: Title, name: title, widget: markdown}
+        - {label: Body, name: body, widget: markdown}
+        - label: "Featured Services"
+          name: "services"
+          widget: list
+          fields:
+            - {label: Title, name: title, widget: markdown}
+            - {label: Body, name: body, widget: markdown}
+        - {label: Other Services, name: other, widget: markdown}
+    - label: "Testimonials Page"
+      name: "testimonials"
+      file: "content/pages/testimonials.yml"
+      fields:
+        - label: "Quotes"
+          name: "quotes"
+          widget: list
+          fields:
+            - {label: Author, name: title, widget: markdown}
+            - {label: Body, name: body, widget: markdown}
+            - {label: Image, name: image, widget: image}
