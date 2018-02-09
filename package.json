@@ -25,7 +25,7 @@
     "babel-plugin-array-includes": "^2.0.3",
     "babel-plugin-dynamic-import-node": "^1.2.0",
     "babel-plugin-module-resolver": "^3.0.0",
-    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
     "babel-preset-stage-2": "^6.24.1",
     "cross-env": "^5.0.1",
     "dotenv": "^5.0.0",
@@ -44,7 +44,8 @@
     "sass-loader": "^6.0.6",
     "url-loader": "^0.6.2",
     "vue-scrollto": "^2.8.0",
-    "vue-style-loader": "^3.0.3"
+    "vue-style-loader": "^3.0.3",
+    "vue-template-compiler": "^2.5.13"
   },
   "config": {
     "nuxt": {
