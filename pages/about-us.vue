@@ -17,7 +17,6 @@ export default {
   layout: 'page',
   components: {
     GlobalHeader,
-    PageBanner,
     OurMission,
     FreeAnalysis,
   },
