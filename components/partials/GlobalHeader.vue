@@ -38,7 +38,7 @@ export default {
         { href: '/about-us', title: 'About Us' },
         { href: '/services', title: 'Services' },
         // {href: '#', title: 'Our Clients'},
-        { href: '/hr-advice', title: 'Free Advice' },
+        { href: '/jobs', title: 'Jobs' },
         { href: '/contact-us', title: 'Contact Us' },
       ],
     };
