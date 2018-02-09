@@ -35,7 +35,11 @@ module.exports = {
   ** Global CSS
   */
   css: [
-    '@/assets/scss/main.scss',
+    // '@/assets/scss/main.scss',
+    '@/assets/styles/theme.scss'
+  ],
+  sassResources: [
+    resolve(__dirname, 'assets/styles/theme.scss')
   ],
 
   /*
@@ -50,7 +54,8 @@ module.exports = {
   ** Nuxt.js modules
   */
   modules: [
-    ['nuxt-sass-resources-loader', ['./assets/scss/abstracts/_settings.scss', './assets/scss/abstracts/_mixins.scss']],
+    // ['nuxt-sass-resources-loader', ['./assets/scss/abstracts/_settings.scss', './assets/scss/abstracts/_mixins.scss']],
+    ['nuxt-sass-resources-loader', ['./assets/styles/settings/variables.scss', './assets/styles/vendor/avalanche.scss']],
     'nuxt-netlify-cms', 
     'nuxtent'
   ],

@@ -1,5 +1,7 @@
 <template>
     <div class="wrapper">
+        <GlobalHeader/>
+
         <section id="navigation" class="container">
             <logo/> 
             <p>{{text.body.hero}}</p>
@@ -10,10 +12,12 @@
 
 <script>
 import Logo from '~/components/Logo.vue'
+import GlobalHeader from '~/components/partials/GlobalHeader';
 
 export default {
   components: {
-    Logo
+    Logo,
+    GlobalHeader
   },
     asyncData: async ({ app }) => ({
     text: await app.$content('/pages').get('/home'),
@@ -54,6 +58,5 @@ export default {
     margin-right: 0;
     padding-top: 16px;
     padding-bottom: 16px;
-    @include app-padding;
 }
 </style>
