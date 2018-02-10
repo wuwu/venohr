@@ -21,7 +21,7 @@ collections: # A list of collections the CMS should be able to edit
   - label: "Pages"
     name: "pages"
     files:
-      - label: "About Page"
+      - label: "About/Intro Page"
         name: "about"
         file: "content/pages/about.yml"
         fields:
@@ -34,15 +34,21 @@ collections: # A list of collections the CMS should be able to edit
               - {label: Name, name: name, widget: string}
               - {label: Position, name: position, widget: string}
               - {label: Photo, name: photo, widget: image}
-      - label: "Services Page"
+      - label: "Services"
         name: "services"
         file: "content/pages/services.yml"
         fields:
           - {label: Title, name: title, widget: string}
           - {label: Intro, name: intro, widget: markdown}
-          - label: Locations
-            name: locations
+          - label: Service Item
+            name: service
             widget: list
             fields:
-              - {label: Name, name: name, widget: string}
-              - {label: Address, name: address, widget: string}
+              - {label: Title, name: title, widget: string}
+              - {label: body, name: body, widget: markdown}
+              - {label: "Image", name: "image", widget: "image", required: false, tagname: ""}
+      - label: "Test"
+        name: "test"
+        file: "content/pages/test.yml"
+        fields:
+          - {label: Title, name: title, widget: string}
