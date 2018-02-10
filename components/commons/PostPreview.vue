@@ -17,8 +17,8 @@ export default {
 </script>
 
 <style lang="scss">
-article.preview {
-  max-width: 600px;
-  margin: auto;
-}
+    article.preview {
+      max-width: 600px;
+      margin: auto;
+    }
 </style>

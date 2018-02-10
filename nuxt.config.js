@@ -64,25 +64,7 @@ module.exports = {
   ** Build configuration
   */
   build: {
-    loaders: [
-      {
-        test: /\.(png|jpe?g|gif|svg)$/,
-        loader: 'url-loader',
-        query: {
-          limit: 1000, // 1KO
-          name: 'img/[name].[hash:7].[ext]',
-        },
-      },
-      {
-        test: /\.(woff2?|eot|ttf|otf)(\?.*)?$/,
-        loader: 'url-loader',
-        query: {
-          limit: 1000, // 1 KO
-          name: 'fonts/[name].[hash:7].[ext]',
-        },
-      },
-    ],
-        /*
+    /*
     ** Run ESLint on save
     */
     extractCSS: true,
