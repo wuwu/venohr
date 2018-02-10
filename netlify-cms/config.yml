@@ -70,6 +70,7 @@ collections: # A list of collections the CMS should be able to edit
         delete: false
         file: "content/pages/services.yml"
         fields:
+          - {label: "Image", name: "image", widget: "image", required: false, tagname: ""}
           - {label: Title, name: title, widget: string}
           - {label: Intro, name: intro, widget: markdown}
 
@@ -78,5 +79,8 @@ collections: # A list of collections the CMS should be able to edit
         delete: false
         file: "content/pages/about.yml"
         fields:
+          - {label: "Image", name: "image", widget: "image", required: false, tagname: ""}
           - {label: Title, name: title, widget: string}
-          - {label: Intro, name: intro, widget: markdown}
+          - {label: Subtitle, name: subtitle, widget: string}
+          - {label: Body, name: body, widget: markdown}
+

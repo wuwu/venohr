@@ -31,52 +31,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.prev-clients {
-  margin: 25px 0 0;
-  padding: 65px 20px;
-  .button {
-    max-width: 240px;
-    margin: 0 auto;
-  }
-}
 
-.prev-clients__title {
-  text-align: center;
-  color: $dark-blue;
-  font-size: 16px;
-  text-transform: uppercase;
-  font-weight: 600;
-  margin-bottom: 0;
-  letter-spacing: 2px;
-}
-
-.prev-clients__logo {
-  margin: 0 auto;
-  width: 100%;
-  padding: 25px;
-  @include av-mq(lap-and-up) {
-    &--0 {
-      margin-top: 10px;
-    }
-    &--5 {
-      width: 120px;
-    }
-    &--2 {
-      margin-top: 20px;
-    }
-    &--3 {
-      margin-top: 30px;
-    }
-    &--4 {
-      width: 100px;
-    }
-    &--1 {
-      margin-top: 25px;
-    }
-  }
-}
-
-.prev-clients__testimonial {
-  margin-top: 25px;
-}
 </style>

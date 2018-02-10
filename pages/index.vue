@@ -1,62 +1,50 @@
 <template>
     <div class="wrapper">
-        <GlobalHeader/>
+        <GlobalHeader class="global-header"/>
 
-        <section id="navigation" class="container">
-            <logo/> 
-            <p>{{text.body.hero}}</p>
+        <section id="about">
+            <h2 class="title is-2 primary is-centered">{{about.body.title}}</h2>
+        </section>
+        <section id="services">
+            <h2 class="title is-2 primary is-centered">{{ services.body.title }}</h2>
+        </section>
+        <section id="process">
+            <h2 class="title is-2 primary is-centered">{{ process.body.title }}</h2>
+        </section>
+        <section id="contact">
+            <h2 class="title is-2 primary is-centered">{{ contact.body.title }}</h2>
         </section>
     </div>
 
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
 import GlobalHeader from '~/components/partials/GlobalHeader';
 
 export default {
   components: {
-    Logo,
     GlobalHeader
   },
     asyncData: async ({ app }) => ({
-    text: await app.$content('/pages').get('/home'),
-  }),
+    about: await app.$content('/pages').get('/about'),
+    services: await app.$content('/pages').get('/services'),
+    process: await app.$content('/pages').get('/process'),
+    contact: await app.$content('/pages').get('/contact')
+  })
 }
 </script>
 
 <style lang="scss" scoped>
-.container
-{
-  min-height: 100vh;
-  display: flex;
-    flex-flow: column;
-  justify-content: center;
-  align-items: center;
-    margin-bottom: 144px;
-}
-.title
-{
-  display: block;
-  font-weight: 300;
-  font-size: 48px;
-  color: $primary;
-  letter-spacing: 1px;
-}
-.has-bg {
-    background-color: $color-background;
-}
-.is-primary {
-    color: $primary;
-}
-.motto {
-    padding: 0;
-    width: 100%;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    margin-left: 0;
-    margin-right: 0;
-    padding-top: 16px;
-    padding-bottom: 16px;
-}
+    .wrapper {
+        min-height: 100vh;
+        max-width: 704px;
+        margin: 0 0 0 64px;
+        background-color: $white;
+    }
+    .global-header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
 </style>

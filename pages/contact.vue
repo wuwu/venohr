@@ -21,7 +21,7 @@ export default {
     FreeAnalysis,
   },
   asyncData: async ({ app }) => ({
-    post: await app.$content('/pages').get('/wuwu'),
+    post: await app.$content('/pages').get('/contact'),
   }),
 };
 </script>

@@ -2,7 +2,7 @@
   <div class="page-index">
     <GlobalHeader/>
     <div class="wrapper">
-      <OurMission :text="text.body" />
+      <OurMission :text="text.body.title" />
       <FreeAnalysis />
     </div>
   </div>

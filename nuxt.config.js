@@ -35,11 +35,11 @@ module.exports = {
   ** Global CSS
   */
   css: [
-    // '@/assets/scss/main.scss',
-    '@/assets/styles/theme.scss'
+    '@/assets/scss/main.scss',
+    //'@/assets/styles/theme.scss'
   ],
   sassResources: [
-    resolve(__dirname, 'assets/styles/theme.scss')
+    resolve(__dirname, 'assets/scss/main.scss')
   ],
 
   /*
@@ -54,16 +54,22 @@ module.exports = {
   ** Nuxt.js modules
   */
   modules: [
-    // ['nuxt-sass-resources-loader', ['./assets/scss/abstracts/_settings.scss', './assets/scss/abstracts/_mixins.scss']],
-    ['nuxt-sass-resources-loader', ['./assets/styles/settings/variables.scss', './assets/styles/vendor/avalanche.scss']],
-    'nuxt-netlify-cms', 
-    'nuxtent'
+    '@nuxtjs/bulma',
+    'nuxt-netlify-cms',
+    'nuxtent',
+    ['nuxt-sass-resources-loader', ['./assets/scss/abstracts/_settings.scss', './assets/scss/abstracts/_mixins.scss']]
+    // ['nuxt-sass-resources-loader', ['./assets/styles/settings/variables.scss', './assets/styles/vendor/avalanche.scss']]
   ],
 
   /*
   ** Build configuration
   */
   build: {
+    postcss: {
+      plugins: {
+        'postcss-custom-properties': false
+      }
+    },
     /*
     ** Run ESLint on save
     */
