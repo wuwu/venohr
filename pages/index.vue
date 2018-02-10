@@ -3,7 +3,15 @@
         <GlobalHeader class="global-header"/>
 
         <section id="about">
+            <div class="mood mood--image">
+                <figure>
+                    <img src="/images/hero-background.jpg" alt="SIMONE HOFER - WELLNESSMASSAGEN">
+                    <figcaption>Wellness Massagen</figcaption>
+                </figure>
+            </div>
+            <img src="/uploads/hero-background.jpg" />
             <h2 class="title is-2 primary is-centered">{{about.body.title}}</h2>
+            <pre>{{about}}</pre>
         </section>
         <section id="services">
             <h2 class="title is-2 primary is-centered">{{ services.body.title }}</h2>

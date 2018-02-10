@@ -2,7 +2,7 @@ backend:
   name: github
   repo: wuwu/venohr # Change to your repo
 
-media_folder: "static/uploads"
+media_folder: "uploads"
 
 collections: # A list of collections the CMS should be able to edit
   - name: "posts" # Used in routes, ie.: /admin/collections/:slug/edit
