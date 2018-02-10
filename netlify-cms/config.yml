@@ -49,22 +49,6 @@ collections: # A list of collections the CMS should be able to edit
   - label: "Pages"
     name: "pages"
     files:
-      - label: "About/Intro Page"
-        name: "about"
-        delete: false
-        file: "content/pages/about.yml"
-        fields:
-          - {label: Title, name: title, widget: string}
-          - {label: Intro, name: intro, widget: markdown}
-
-      - label: "Services"
-        name: "services"
-        delete: false
-        file: "content/pages/services.yml"
-        fields:
-          - {label: Title, name: title, widget: string}
-          - {label: Intro, name: intro, widget: markdown}
-
       - label: "Kontakt"
         name: "contact"
         delete: false
@@ -77,6 +61,22 @@ collections: # A list of collections the CMS should be able to edit
         name: "prozess"
         delete: false
         file: "content/pages/process.yml"
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Intro, name: intro, widget: markdown}
+
+      - label: "Services"
+        name: "services"
+        delete: false
+        file: "content/pages/services.yml"
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Intro, name: intro, widget: markdown}
+
+      - label: "About/Intro Page"
+        name: "about"
+        delete: false
+        file: "content/pages/about.yml"
         fields:
           - {label: Title, name: title, widget: string}
           - {label: Intro, name: intro, widget: markdown}
