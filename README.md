@@ -1,4 +1,10 @@
-# ATC boilerplate for - vue/nuxt, css-grid, bulma spa
+# ATC boilerplate for - nuxt, netlify-cms, bulma
+
+>  prerender
+
+> netlify deploy command: npm run build && npm run generate
+
+reminder: nuxten currently not working with nuxt ver > 1.0.0_rc11
 
 > Nuxt.js project starter for SPA
 

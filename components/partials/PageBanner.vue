@@ -14,16 +14,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.page-banner {
-  background-color: #f1f6fb;
-  .container {
-    padding: 0 20px;
-  }
-}
 
-.page-banner__title {
-  font-size: 2rem;
-  padding: 45px 0;
-  margin: 0;
-}
 </style>
