@@ -5,7 +5,7 @@
         <section id="about">
             <div class="mood mood--image">
                 <figure>
-                    <img :src="image" alt="venohr consult">
+                    <img :src="getCorrectImagePath(about.body.image)" alt="venohr consult">
                     <figcaption>something ultra smart...</figcaption>
                 </figure>
             </div>
@@ -15,13 +15,17 @@
         <section id="services">
             <h2 class="title is-2 primary is-centered">{{ services.body.title }}</h2>
             <figure>
-                <img :src="services.body.image" alt="SIMONE HOFER - WELLNESSMASSAGEN">
+                <img :src="getCorrectImagePath(services.body.image)" alt="venohr consult">
                 <figcaption>some Quote...</figcaption>
             </figure>
             <pre>{{services}}</pre>
         </section>
         <section id="process">
             <h2 class="title is-2 primary is-centered">{{ process.body.title }}</h2>
+            <figure>
+                <img :src="getCorrectImagePath(process.body.image)" alt="venohr consult">
+                <figcaption>some Quote...</figcaption>
+            </figure>
             <pre>{{process}}</pre>
         </section>
         <section id="contact">
@@ -45,17 +49,15 @@ export default {
     process: await app.$content('/pages').get('/process'),
     contact: await app.$content('/pages').get('/contact')
   }),
-  computed: {
-    image () {
-      const path =  this.about.body.image.split('/')
+  methods: {
+    getCorrectImagePath (url) {
+      const path =  url.split('/')
       path.slice(1,3)
-      console.log('path', path)
       let newPath = ''
-      for (let i = 1; i < path.length; i++) {
+      for (let i = 2; i < path.length; i++) {
         newPath += "/";
         newPath += path[i];
       }
-      console.log('newPath', newPath)
       return newPath
     },
   }
