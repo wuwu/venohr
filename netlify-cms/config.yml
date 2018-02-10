@@ -1,5 +1,5 @@
 backend:
-  name: git-gateway
+  name: github
   repo: wuwu/venohr # Change to your repo
 
 media_folder: "static/uploads"
