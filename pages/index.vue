@@ -5,22 +5,28 @@
         <section id="about">
             <div class="mood mood--image">
                 <figure>
-                    <img src="/images/hero-background.jpg" alt="SIMONE HOFER - WELLNESSMASSAGEN">
-                    <figcaption>Wellness Massagen</figcaption>
+                    <img :src="about.body.image" alt="venohr consult">
+                    <figcaption>something ultra smart...</figcaption>
                 </figure>
             </div>
-            <img src="/uploads/hero-background.jpg" />
             <h2 class="title is-2 primary is-centered">{{about.body.title}}</h2>
             <pre>{{about}}</pre>
         </section>
         <section id="services">
             <h2 class="title is-2 primary is-centered">{{ services.body.title }}</h2>
+            <figure>
+                <img :src="services.body.image" alt="SIMONE HOFER - WELLNESSMASSAGEN">
+                <figcaption>some Quote...</figcaption>
+            </figure>
+            <pre>{{services}}</pre>
         </section>
         <section id="process">
             <h2 class="title is-2 primary is-centered">{{ process.body.title }}</h2>
+            <pre>{{process}}</pre>
         </section>
         <section id="contact">
             <h2 class="title is-2 primary is-centered">{{ contact.body.title }}</h2>
+            <pre>{{contact}}</pre>
         </section>
     </div>
 
