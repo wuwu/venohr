@@ -1,8 +1,6 @@
 backend:
-  name: github
+  name: git-gateway
   repo: wuwu/venohr # Change to your repo
-  base_url: https://api.netlify.com"
-  site_domain: "cms.netlify.com"
 
 media_folder: "static/uploads"
 
