@@ -5,7 +5,7 @@
         <section id="about">
             <div class="mood mood--image">
                 <figure>
-                    <img :src="about.body.image" alt="venohr consult">
+                    <img :src="image" alt="venohr consult">
                     <figcaption>something ultra smart...</figcaption>
                 </figure>
             </div>
@@ -44,7 +44,21 @@ export default {
     services: await app.$content('/pages').get('/services'),
     process: await app.$content('/pages').get('/process'),
     contact: await app.$content('/pages').get('/contact')
-  })
+  }),
+  computed: {
+    image () {
+      const path =  this.about.body.image.split('/')
+      path.slice(1,3)
+      console.log('path', path)
+      let newPath = ''
+      for (let i = 1; i < path.length; i++) {
+        newPath += "/";
+        newPath += path[i];
+      }
+      console.log('newPath', newPath)
+      return newPath
+    },
+  }
 }
 </script>
 
