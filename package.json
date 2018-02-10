@@ -35,8 +35,11 @@
     "prettier": "^1.9.1",
     "sass-loader": "^6.0.6",
     "url-loader": "^0.6.2",
+    "vue": "^2.4.4",
     "vue-scrollto": "^2.8.0",
-    "vue-style-loader": "^3.0.3"
+    "vue-server-renderer": "^2.4.4",
+    "vue-style-loader": "^3.0.3",
+    "vue-template-compiler": "^2.4.4"
   },
   "config": {
     "nuxt": {
