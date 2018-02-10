@@ -2,7 +2,7 @@
   <div class="page-index">
     <GlobalHeader/>
     <div class="wrapper">
-      <OurMission :text="text.body" />
+      <OurMission :text="post.title" />
       <FreeAnalysis />
     </div>
   </div>
@@ -21,7 +21,7 @@ export default {
     FreeAnalysis,
   },
   asyncData: async ({ app }) => ({
-    text: await app.$content('/pages').get('/about'),
+    post: await app.$content('/pages').get('/process'),
   }),
 };
 </script>

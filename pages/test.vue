@@ -2,26 +2,31 @@
   <div class="page-index">
     <GlobalHeader/>
     <div class="wrapper">
-      <OurMission :text="post.title" />
-      <FreeAnalysis />
+      <PageBanner title="Free HR Advice"/>
+      <div class="container">
+        <p>{{ text }}</p>
+      </div>
     </div>
+    <FreeAnalysis/>
   </div>
 </template>
 
 <script>
 import GlobalHeader from '~/components/partials/GlobalHeader';
-import OurMission from '~/components/pages/About/OurMission';
+import PageBanner from '~/components/partials/PageBanner';
 import FreeAnalysis from '~/components/commons/FreeAnalysis';
 
 export default {
-  layout: 'page',
+  layout: 'default',
   components: {
     GlobalHeader,
-    OurMission,
-    FreeAnalysis,
+    PageBanner,
+    FreeAnalysis
   },
   asyncData: async ({ app }) => ({
-    post: await app.$content('/pages').get('/wuwu'),
+    text: await app.$content('/pages').get('/test'),
   }),
 };
 </script>
+
+

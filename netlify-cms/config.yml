@@ -18,37 +18,65 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Job Title", name: "jobtitle", widget: "string"}
     meta:
       - {label: "SEO Description", name: "description", widget: "text"}
+
+  - name: "testimonials" # Used in routes, ie.: /admin/collections/:slug/edit
+    label: "Testimonial" # Used in the UI, ie.: "New Post"
+    folder: "content/testimonials"
+    slug: "{{year}}-{{slug}}"
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields each document in this collection have
+      - {label: "Title", name: "title", widget: "string", tagname: "h1"}
+      - {label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DD hh:mma"}
+      - {label: "Cover Image", name: "image", widget: "image", required: false, tagname: ""}
+      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Job Title", name: "jobtitle", widget: "string"}
+    meta:
+      - {label: "SEO Description", name: "description", widget: "text"}
+
+  - name: "jobs" # Used in routes, ie.: /admin/collections/:slug/edit
+    label: "Jobs" # Used in the UI, ie.: "New Post"
+    folder: "content/jobs"
+    slug: "{{year}}-{{slug}}"
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields each document in this collection have
+      - {label: "Title", name: "title", widget: "string", tagname: "h1"}
+      - {label: "Job Title", name: "jobtitle", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DD hh:mma"}
+      - {label: "Body", name: "body", widget: "markdown"}
+    meta:
+      - {label: "SEO Description", name: "description", widget: "text"}
+
   - label: "Pages"
     name: "pages"
     files:
       - label: "About/Intro Page"
         name: "about"
+        delete: false
         file: "content/pages/about.yml"
         fields:
           - {label: Title, name: title, widget: string}
           - {label: Intro, name: intro, widget: markdown}
-          - label: Team
-            name: team
-            widget: list
-            fields:
-              - {label: Name, name: name, widget: string}
-              - {label: Position, name: position, widget: string}
-              - {label: Photo, name: photo, widget: image}
+
       - label: "Services"
         name: "services"
+        delete: false
         file: "content/pages/services.yml"
         fields:
           - {label: Title, name: title, widget: string}
           - {label: Intro, name: intro, widget: markdown}
-          - label: Service Item
-            name: service
-            widget: list
-            fields:
-              - {label: Title, name: title, widget: string}
-              - {label: body, name: body, widget: markdown}
-              - {label: "Image", name: "image", widget: "image", required: false, tagname: ""}
-      - label: "Test"
-        name: "test"
-        file: "content/pages/test.yml"
+
+      - label: "Kontakt"
+        name: "contact"
+        delete: false
+        file: "content/pages/contact.yml"
         fields:
           - {label: Title, name: title, widget: string}
+          - {label: Intro, name: intro, widget: markdown}
+
+      - label: "Prozess"
+        name: "prozess"
+        delete: false
+        file: "content/pages/process.yml"
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Intro, name: intro, widget: markdown}
