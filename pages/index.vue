@@ -1,5 +1,5 @@
 <template>
-    <section id="intro">
+    <section id="index">
         <div class="mood mood--image">
             <figure>
                 <img :src="`..${intro.body.image}`" alt="venohr consult">
