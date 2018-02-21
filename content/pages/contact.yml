@@ -1,30 +1,26 @@
 name: Kontakt
 image: /uploads/header06_kontakt_venohr_consulting.jpg
-image2: /uploads/venohr_logo_kontakt2.png
 title: Für Sie da. Für Sie aktiv.
 body: >-
   Welche Position möchten Sie besetzen? Benötigen Sie Unterstützung durch
   Executive Consultancy? Möchten Sie mehr über Venohr Consult Direct Search oder
   unseren bewährten Cultural Profiling Prozess erfahren? Dann freue ich mich
   sehr, von Ihnen zu hören.
-
-
-  Venohr Consult
-
+image2: /uploads/venohr_logo_kontakt2.png
+adress: |+
+  <div class="columns">
+  <div class="column">Venohr Consult
 
   D-82211 Herrsching
 
-
   Mühlfelder Straße 6 a
 
-
-  yv@venohr-consult.de 
-
-
-  Tel: + 49 (0)8152-9832223
-
+  yv@venohr-consult.de </div>
+  <div class="column">Tel: + 49 (0)8152-9832223
 
   Fax: +49 (0)8152-9832224
 
+  Mobil: +49 (0)172-64 62 069</div>
+  </div>
 
-  Mobil: +49 (0)172-64 62 069
+
