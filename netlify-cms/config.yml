@@ -72,7 +72,7 @@ collections: # A list of collections the CMS should be able to edit
           - {label: Profile Image, name: profileimage, widget: image, required: false, tagname: ""}
           - {label: Section Title, name: title, widget: string}
           - {label: Body, name: body, widget: markdown}
-          - {label: Hero Title, name: herotitle, widget: markup, required: false}
+          - {label: Hero Title, name: herotitle, widget: markdown, required: false}
 
 
       - label: "Erfahrung"
@@ -84,10 +84,10 @@ collections: # A list of collections the CMS should be able to edit
           - {label: Image, name: image, widget: image, required: false, tagname: ""}
           - {label: Section Title, name: title, widget: string}
           - {label: Body, name: body, widget: markdown}
-          - {label: Hero Title, name: herotitle, widget: markup, required: false}
+          - {label: Hero Title, name: herotitle, widget: markdown, required: false}
 
 
-      - label: "Services"
+      - label: "Leistung"
         name: "services"
         delete: false
         file: "content/pages/services.yml"
@@ -96,7 +96,7 @@ collections: # A list of collections the CMS should be able to edit
           - {label: Image, name: image, widget: image, required: false, tagname: ""}
           - {label: Section Title, name: title, widget: string}
           - {label: Intro, name: intro, widget: markdown}
-          - {label: Hero Title, name: herotitle, widget: markup, required: false}
+          - {label: Hero Title, name: herotitle, widget: markdown, required: false}
 
       - label: "Prozess"
         name: "prozess"
@@ -107,7 +107,7 @@ collections: # A list of collections the CMS should be able to edit
           - {label: Image, name: image, widget: image, required: false, tagname: ""}
           - {label: Section Title, name: title, widget: string}
           - {label: Body, name: body, widget: markdown}
-          - {label: Hero Title, name: herotitle, widget: markup, required: false}
+          - {label: Hero Title, name: herotitle, widget: markdown, required: false}
 
       - label: "Intro Page"
         name: "intro"
@@ -118,6 +118,6 @@ collections: # A list of collections the CMS should be able to edit
           - {label: Image, name: image, widget: image, required: false, tagname: ""}
           - {label: Section Title, name: title, widget: string}
           - {label: Body, name: body, widget: markdown}
-          - {label: Hero Title, name: herotitle, widget: markup, required: false}
+          - {label: Hero Title, name: herotitle, widget: markdown, required: false}
           - {label: Hero Text, name: herotext, widget: text, required: false}
 
