@@ -17,9 +17,10 @@ collections: # A list of collections the CMS should be able to edit
         fields:
           - {label: Section Name, name: name, widget: string}
           - {label: "Image", name: "image", widget: "image", required: false, tagname: ""}
-          - {label: Logo Kontakt, name: image2, widget: image, required: false, tagname: ""}
           - {label: Title, name: title, widget: string}
           - {label: Body, name: body, widget: markdown}
+          - {label: Logo Kontakt, name: image2, widget: image, required: false, tagname: ""}
+          - {label: Adresse, name: adress, widget: markdown}
 
       - label: "About Yella"
         name: "about"
@@ -73,7 +74,7 @@ collections: # A list of collections the CMS should be able to edit
         delete: false
         file: "content/pages/intro.yml"
         fields:
-          - {label: Section Name, name: name, widget: string}
+          - {label: Section Name, name: name, widget: string, required: false}
           - {label: Image, name: image, widget: image, required: false, tagname: ""}
           - {label: Section Title, name: title, widget: string}
           - {label: Body, name: body, widget: markdown}

@@ -5,19 +5,21 @@
         <section-post id="leistung" :post="postLeistung.body"></section-post>
         <section-post id="erfahrung" :post="postErfahrung.body"></section-post>
         <section-about id="about" :post="postAbout.body"></section-about>
-        <section-post id="kontakt" :post="postKontakt.body"></section-post>
+        <section-kontakt id="kontakt" :post="postKontakt.body"></section-kontakt>
     </div>
 </template>
 
 <script>
-import SectionPost from '~/components/commons/Post'
-import SectionAbout from '~/components/commons/PostAbout'
+import SectionPost from '~/components/posts/Post'
+import SectionAbout from '~/components/posts/PostAbout'
+import SectionKontakt from '~/components/posts/PostKontakt'
 
 export default {
   name: 'front',
   components: {
     SectionPost,
-    SectionAbout
+    SectionAbout,
+    SectionKontakt
   },
   asyncData: async ({ app }) => ({
       postIntro: await app.$content('/pages').get('/intro'),
