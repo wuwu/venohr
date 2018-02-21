@@ -1,15 +1,32 @@
-image: /static/uploads/sample_bg.jpg
-title: About
-subtitle: about - subtitle
+name: Erfahrung
+image: /uploads/header04_erfahrung_venohr_consulting.jpg
+title: 'Genau so wichtig wie Erfolg: Diskretion.'
 body: >-
-  **Lorem ipsum dolor sit amet, **
+  Bitte haben Sie Verständnis dafür, dass auf die Nennung einzelner Unternehmen
+  an dieser Stelle verzichtet wird. Branchenübergreifend und für
+  mittelständische Unternehmen wie für internationale Konzerne hat Venohr
+  Consult Executive Search dazu beitragen dürfen, einige hundert Positionen im
+  Top-Management neu zu besetzen, mit besonderer Expertise in den Branchen:
 
 
-  consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
-  et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
-  justo duo dolores et ea rebum. Stet clita kasd gubergren, _no sea takimat_a
-  sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
-  sadipscing elitr, sed diam nonumy eir_mod tempor invid_unt ut labore et dolore
-  magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
-  dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
-  Lorem ipsum dolor sit amet.
+
+
+  ## Industry 
+
+
+  ## Energy & Utilities
+
+
+  ## Financial Services
+
+
+  ## Consumer Goods
+
+
+
+
+  Venohr Consult Executive Search ist auch international tätig, vorzugsweise in
+  der DACH-Region und in der EU.
+herotitle: |-
+  Genau so wichtig wie Erfolg: \
+  Diskretion.
