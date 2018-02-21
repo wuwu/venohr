@@ -16,7 +16,7 @@ module.exports = {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', type: 'text/css', href: 'https://fonts.googleapis.com/css?family=EB+Garamond:400,400i,600,600i,700,700i' }
+      { rel: 'stylesheet', type: 'text/css', href: 'https://fonts.googleapis.com/css?family=Noto+Serif:700|Work+Sans' }
     ],
     script: [
       {
@@ -47,7 +47,7 @@ module.exports = {
   */
   plugins: [
     '~plugins/vue-scrollto.js',
-    { src: '~/plugins/markdown', ssr: true }
+    { src: '~/plugins/vue-markdown', ssr: true }
   ],
 
   /*

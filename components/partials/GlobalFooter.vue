@@ -1,29 +1,22 @@
 <template>
-  <header>
-      <div class="branding">
-        <logo></logo>
-      </div>
+  <footer>
         <div class="main-menu" v-show="openMenu">
             <a class="main-menu__link" v-for="link in menu" :href="link.href" v-bind:class="{ active: isActive(link) }" :key="link.title">{{link.title}}</a>
         </div>
-  </header>
+  </footer>
 </template>
 
 <script>
-  import Logo from '~/components/commons/Logo.vue'
 
   export default {
-    components: {
-      Logo
-    },
       data() {
         return {
           openMenu: true,
           menu: [
-            { href: '/prozess', title: 'Prozess' },
-            { href: '/services', title: 'Leistungen' },
-            { href: '/erfahrung', title: 'Erfahrung'},
-            { href: '/about', title: 'Yella Venohr' },
+            // { href: '/', title: 'Home' },
+            { href: '/services', title: 'Services' },
+            { href: '/process', title: 'Der Prozess'},
+            // { href: '/jobs', title: 'Jobs' },
             { href: '/contact', title: 'Kontakt' },
           ],
         };
