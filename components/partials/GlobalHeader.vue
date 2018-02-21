@@ -48,10 +48,22 @@
     .main-menu {
         padding: 32px;
         display: flex;
+        flex-direction: column;
         justify-content: space-between;
+        a {
+            text-align: center;
+        }
+        @include tablet {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            a {
+                text-align: left;
+            }
+        }
     }
     .main-menu__link{
-        font-family: "Work Sans" sans-serif;
+        font-family: $sans-font;
         font-style: normal;
         font-size: 16px;
         font-weight: bold;

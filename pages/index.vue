@@ -1,42 +1,32 @@
 <template>
-    <section id="index">
-        <div class="mood mood--image">
-            <figure>
-                <img :src="`..${intro.body.image}`" alt="venohr consult">
-                <figcaption>{{intro.body.herotitle}}</figcaption>
-            </figure>
-        </div>
-        <vue-markdown :source="intro.body.herotext"></vue-markdown>
-        <h2 class="title is-2 primary is-centered">{{intro.body.title}}</h2>
-        <vue-markdown :source="intro.body.body"></vue-markdown>
-    </section>
+    <div id="index">
+        <section-post id="intro" :post="postIntro.body"></section-post>
+        <section-post id="prozess" :post="postProzess.body"></section-post>
+        <section-post id="leistung" :post="postLeistung.body"></section-post>
+        <section-post id="erfahrung" :post="postErfahrung.body"></section-post>
+        <section-post id="about" :post="postAbout.body"></section-post>
+        <section-post id="kontakt" :post="postKontakt.body"></section-post>
+    </div>
 </template>
 
 <script>
-
+import SectionPost from '~/components/commons/Post'
 export default {
-    asyncData: async ({ app }) => ({
-        intro: await app.$content('/pages').get('/intro'),
-    })
+  name: 'front',
+  components: {
+    SectionPost
+  },
+  asyncData: async ({ app }) => ({
+      postIntro: await app.$content('/pages').get('/intro'),
+      postProzess: await app.$content('/pages').get('/process'),
+      postLeistung: await app.$content('/pages').get('/services'),
+      postErfahrung: await app.$content('/pages').get('/erfahrung'),
+      postAbout: await app.$content('/pages').get('/about'),
+      postKontakt: await app.$content('/pages').get('/contact'),
+  })
 }
 </script>
 
 <style lang="scss" scoped>
-    .mood--image {
-        figure {
-            line-height: 0;
-            margin: 0;
-            padding: 0;
-            border: solid 10px $primary;
-        }
-        figcaption {
-            color: $primary;
-            font-size: 36px;
-            line-height: 38px;
-        }
-        img {
-            width: 100%;
-            height: auto;
-        }
-    }
+
 </style>
