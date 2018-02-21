@@ -1,8 +1,16 @@
 <template>
   <footer>
-        <div class="main-menu" v-show="openMenu">
-            <a class="main-menu__link" v-for="link in menu" :href="link.href" v-bind:class="{ active: isActive(link) }" :key="link.title">{{link.title}}</a>
+        <div class="main-menu">
+            <a class="main-menu__link" href="#" v-scroll-to="'#prozess'">Prozess</a>
+            <a class="main-menu__link" href="#" v-scroll-to="'#leistung'">Leistungen</a>
+            <a class="main-menu__link" href="#" v-scroll-to="'#erfahrung'">Erfahrung</a>
+            <a class="main-menu__link" href="#" v-scroll-to="'#about'">About</a>
+            <a class="main-menu__link" href="#" v-scroll-to="'#kontakt'">Kontakt</a>
         </div>
+      <div class="menu">
+          <nuxt-link to="/disclaimer" class="main-menu__link" >Impressum</nuxt-link>
+          <nuxt-link to="/disclaimer" class="main-menu__link" >Datenschutz</nuxt-link>
+      </div>
   </footer>
 </template>
 
@@ -30,17 +38,34 @@
 </script>
 
 <style lang="scss" scoped>
-    .branding {
-        padding-top: 32px;
-    }
-    .branding {
+    footer {
+        background-image: url("~/assets/images/footer_background01.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 32px;
         display: flex;
-        justify-content: center;
+        align-items: flex-start;
+        justify-content: space-between;
+        font-family: $sans-font;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        text-transform: uppercase;
     }
     .main-menu {
         padding: 0 32px;
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+    .menu {
+        display: flex;
+        align-items: flex-end;
+        flex-direction: column;
+    }
+    .main-menu__link {
+        color: $white;
+        text-decoration: none;
     }
 
 </style>

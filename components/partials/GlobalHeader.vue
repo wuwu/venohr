@@ -4,7 +4,11 @@
         <logo></logo>
       </div>
         <div class="main-menu" v-show="openMenu">
-            <a class="main-menu__link" v-for="link in menu" :href="link.href" v-bind:class="{ active: isActive(link) }" :key="link.title">{{link.title}}</a>
+            <a class="main-menu__link" href="#" v-scroll-to="'#prozess'">Prozess</a>
+            <a class="main-menu__link" href="#" v-scroll-to="'#leistung'">Leistungen</a>
+            <a class="main-menu__link" href="#" v-scroll-to="'#erfahrung'">Erfahrung</a>
+            <a class="main-menu__link" href="#" v-scroll-to="'#about'">About</a>
+            <a class="main-menu__link" href="#" v-scroll-to="'#kontakt'">Kontakt</a>
         </div>
   </header>
 </template>
@@ -18,14 +22,7 @@
     },
       data() {
         return {
-          openMenu: true,
-          menu: [
-            { href: '/prozess', title: 'Prozess' },
-            { href: '/leistungen', title: 'Leistungen' },
-            { href: '/erfahrung', title: 'Erfahrung'},
-            { href: '/about', title: 'Yella Venohr' },
-            { href: '/kontakt', title: 'Kontakt' },
-          ],
+          openMenu: true
         };
       },
       methods: {

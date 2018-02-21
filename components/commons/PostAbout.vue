@@ -8,7 +8,14 @@
             <h4>{{post.name}}</h4>
             <vue-markdown :source="post.herotext"></vue-markdown>
             <h2 class="title is-2 primary is-centered">{{post.title}}</h2>
-            <vue-markdown :source="post.body"></vue-markdown>
+            <div class="columns">
+                <div class="column column-profile-pic">
+                        <img :src="`..${post.profileimage}`" alt="Yella Venohr - Executive Search and Consultancy" class="profile-image" width="251px" height="238px" />
+                </div>
+                <div class="column column-content">
+                    <vue-markdown :source="post.body"></vue-markdown>
+                </div>
+            </div>
         </div>
     </div>
 </template>
@@ -43,6 +50,21 @@
             padding: 0 64px;
         }
     }
+    .column-profile-pic{
+        flex: 0 0 251px;
+        padding-top: 1rem;
+    }
+
+    .profile-image {
+        width: 251px;
+        height: 238px;
+    }
+    .column-content {
+        padding-left: 10px;
+        @include tablet {
+            padding-left: 32px;
+        }
+    }
     h2 {
         padding: 0 10px;
 
@@ -57,5 +79,11 @@
         font-style: normal;
         text-transform: uppercase;
         font-size: 16px;
+    }
+    .columns{
+        @include tablet {
+            display: flex;
+            align-items: flex-start;
+        }
     }
 </style>

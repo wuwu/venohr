@@ -1,6 +1,6 @@
 <template>
       <a href="/" class="branding--logo">
-          <img src="~/assets/images/venohr_logo.svg" alt="Venohr Consult" class="branding__img">
+          <img src="~/assets/images/venohr_logo.png" alt="Venohr Consult" class="branding__img">
       </a>
 </template>
 

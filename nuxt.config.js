@@ -12,8 +12,10 @@ module.exports = {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: pkg.description }
-    ],
+      { hid: 'title', name: 'title', content: 'Yella Venohr Consult' },
+      { hid: 'description', name: 'description', content: 'missing' },
+      { hid: 'keywords', name: 'keywords', content: 'missing' },
+      { hid: 'google-site-verification', name:'google-site-verification', content: 'missing'}    ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'stylesheet', type: 'text/css', href: 'https://fonts.googleapis.com/css?family=Noto+Serif|Work+Sans:700' }
