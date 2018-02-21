@@ -9,7 +9,6 @@
         <vue-markdown :source="intro.body.herotext"></vue-markdown>
         <h2 class="title is-2 primary is-centered">{{intro.body.title}}</h2>
         <vue-markdown :source="intro.body.body"></vue-markdown>
-        <pre>{{intro}}</pre>
     </section>
 </template>
 
@@ -23,5 +22,21 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
+    .mood--image {
+        figure {
+            line-height: 0;
+            margin: 0;
+            padding: 0;
+            border: solid 10px $primary;
+        }
+        figcaption {
+            color: $primary;
+            font-size: 36px;
+            line-height: 38px;
+        }
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
 </style>

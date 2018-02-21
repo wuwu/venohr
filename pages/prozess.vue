@@ -8,10 +8,10 @@
               </figcaption>
           </figure>
       </div>
-      <h2 class="title is-2 primary is-centered" v-html="page.body.title"></h2>
-
-      <vue-markdown :source="page.body.body"></vue-markdown>
-
+      <div class="content">
+        <h2 class="title is-2 primary is-centered" v-html="page.body.title"></h2>
+        <vue-markdown :source="page.body.body"></vue-markdown>
+      </div>
   </div>
 </template>
 
@@ -24,3 +24,25 @@ export default {
   }),
 };
 </script>
+<style lang="scss" scoped>
+    .mood--image {
+    figure {
+        line-height: 0;
+        margin: 0;
+        padding: 0;
+        border: solid 10px $primary;
+    }
+    figcaption {
+        color: $primary;
+        font-size: 36px;
+        line-height: 38px;
+    }
+    img {
+        width: 100%;
+        height: auto;
+    }
+    }
+    .content {
+        padding: 32px;
+    }
+</style>

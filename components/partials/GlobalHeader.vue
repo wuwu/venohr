@@ -24,7 +24,7 @@
             { href: '/leistungen', title: 'Leistungen' },
             { href: '/erfahrung', title: 'Erfahrung'},
             { href: '/about', title: 'Yella Venohr' },
-            { href: '/contact', title: 'Kontakt' },
+            { href: '/kontakt', title: 'Kontakt' },
           ],
         };
       },
@@ -46,7 +46,7 @@
         margin-bottom: 32px;
     }
     .main-menu {
-        padding: 0 32px;
+        padding: 32px;
         display: flex;
         justify-content: space-between;
     }

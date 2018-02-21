@@ -60,7 +60,7 @@ collections: # A list of collections the CMS should be able to edit
           - {label: "Image", name: "image", widget: "image", required: false, tagname: ""}
           - {label: Logo Kontakt, name: image2, widget: image, required: false, tagname: ""}
           - {label: Title, name: title, widget: string}
-          - {label: Intro, name: intro, widget: markdown}
+          - {label: Body, name: body, widget: markdown}
 
       - label: "About Yella"
         name: "about"

@@ -17,13 +17,13 @@
 
 <script>
 
-export default {
-  layout: 'page',
-  components: {  },
-  asyncData: async ({ app }) => ({
-    page: await app.$content('/pages').get('/services'),
-  }),
-};
+  export default {
+    layout: 'page',
+    components: {  },
+    asyncData: async ({ app }) => ({
+      page: await app.$content('/pages').get('/contact'),
+    }),
+  };
 </script>
 <style lang="scss" scoped>
     .mood--image {
