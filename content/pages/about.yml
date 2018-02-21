@@ -1,15 +1,20 @@
-image: /static/uploads/sample_bg.jpg
-title: About
-subtitle: about - subtitle
+name: Intro
+image: /static/uploads/venohr_consulting_header01_intro.jpg
+title: Algorithmen suchen. Erfahrung findet.
 body: >-
-  **Lorem ipsum dolor sit amet, **
+  Auch die Personalberaterbranche befindet sich inmitten disruptiver Entwicklun-
+  gen, die zu weitreichenden Veränderungen in der Personalsuche führen und
+  weiter führen werden. Die Digitalisierung ebnet neue Wege für die Suche nach
+  geeigneten Kandidaten. Verstärkt kommen datenbasierte Entscheidungsfindungen
+  – Stichwort Robot Recruiting – zum Einsatz. Doch Algorithmen können den
+  Suchprozess zwar unterstützen, nicht aber den „menschlichen“ Faktor ersetzen.
 
 
-  consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
-  et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
-  justo duo dolores et ea rebum. Stet clita kasd gubergren, _no sea takimat_a
-  sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
-  sadipscing elitr, sed diam nonumy eir_mod tempor invid_unt ut labore et dolore
-  magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
-  dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
-  Lorem ipsum dolor sit amet.
+  Beratungsstärke. Bewertungskompetenz. Marktkenntnis. Die Vernetzung von
+  Mensch zu Mensch. Das sind die entscheidenden Assets, wenn es darum geht,
+  Positi- onen des Top-Managements nachhaltig erfolgreich zu besetzen.
+herotitle: 'Hire for attitude and skill: Willkommen bei Venohr Consult.'
+herotext: >
+  Als Expertin für Executive Search helfe ich Ihnen, Führungskräfte und hoch
+  qualifizierte Spezialisten für Ihr Unternehmen zu gewinnen. Bei allen
+  Personalfragen rund um Executive Consultancy berate ich Sie ebenfalls gerne. 
