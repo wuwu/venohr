@@ -33,7 +33,7 @@
 </script>
 <style lang="scss" scoped>
     .wrapper {
-        max-width: 840px;
+        max-width: 920px;
         margin: 0 auto;
         background: $white;
     }

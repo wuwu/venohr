@@ -58,6 +58,10 @@
                 text-align: left;
             }
         }
+        @include desktop {
+            padding-left: 128px;
+            padding-right: 128px;
+        }
     }
     .main-menu__link{
         font-family: $sans-font;

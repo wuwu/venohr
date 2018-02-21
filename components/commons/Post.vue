@@ -47,7 +47,7 @@
         padding: 0 10px;
 
         @include tablet {
-            padding: 0 96px;
+            padding: 0  32px 0 96px;
             font-size: 36px;
         }
     }
