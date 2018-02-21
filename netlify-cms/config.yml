@@ -63,7 +63,7 @@ collections: # A list of collections the CMS should be able to edit
       - label: "About Yella"
         name: "about"
         delete: false
-        file: "content/pages/erfahrung.yml"
+        file: "content/pages/about.yml"
         fields:
           - {label: Section Name, name: name, widget: string}
           - {label: Image, name: image, widget: image, required: false, tagname: ""}
@@ -106,6 +106,7 @@ collections: # A list of collections the CMS should be able to edit
           - {label: Section Title, name: title, widget: string}
           - {label: Body, name: body, widget: markdown}
           - {label: Hero Title, name: herotitle, widget: markup, required: false}
+
       - label: "Intro Page"
         name: "intro"
         delete: false
