@@ -31,6 +31,10 @@
     }
   }
 </script>
-<style>
-
+<style lang="scss" scoped>
+    .wrapper {
+        max-width: 840px;
+        margin: 0 auto;
+        background: $white;
+    }
 </style>

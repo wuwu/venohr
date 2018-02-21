@@ -21,7 +21,7 @@
           openMenu: true,
           menu: [
             { href: '/prozess', title: 'Prozess' },
-            { href: '/services', title: 'Leistungen' },
+            { href: '/leistungen', title: 'Leistungen' },
             { href: '/erfahrung', title: 'Erfahrung'},
             { href: '/about', title: 'Yella Venohr' },
             { href: '/contact', title: 'Kontakt' },
@@ -43,11 +43,21 @@
     .branding {
         display: flex;
         justify-content: center;
+        margin-bottom: 32px;
     }
     .main-menu {
         padding: 0 32px;
         display: flex;
         justify-content: space-between;
+    }
+    .main-menu__link{
+        font-family: "Work Sans" sans-serif;
+        font-style: normal;
+        font-size: 16px;
+        font-weight: bold;
+        color: $black;
+        text-transform: uppercase;
+        text-decoration: none;
     }
 
 </style>

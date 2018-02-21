@@ -16,7 +16,7 @@ module.exports = {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', type: 'text/css', href: 'https://fonts.googleapis.com/css?family=Noto+Serif:700|Work+Sans' }
+      { rel: 'stylesheet', type: 'text/css', href: 'https://fonts.googleapis.com/css?family=Noto+Serif|Work+Sans:700' }
     ],
     script: [
       {
@@ -36,10 +36,6 @@ module.exports = {
   */
   css: [
     '@/assets/scss/main.scss',
-    //'@/assets/styles/theme.scss'
-  ],
-  sassResources: [
-    resolve(__dirname, 'assets/scss/main.scss')
   ],
 
   /*
@@ -54,11 +50,9 @@ module.exports = {
   ** Nuxt.js modules
   */
   modules: [
-    '@nuxtjs/bulma',
     'nuxt-netlify-cms',
     'nuxtent',
     ['nuxt-sass-resources-loader', ['./assets/scss/abstracts/_settings.scss', './assets/scss/abstracts/_mixins.scss']]
-    // ['nuxt-sass-resources-loader', ['./assets/styles/settings/variables.scss', './assets/styles/vendor/avalanche.scss']]
   ],
 
   /*

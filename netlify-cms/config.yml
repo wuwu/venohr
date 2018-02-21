@@ -95,7 +95,7 @@ collections: # A list of collections the CMS should be able to edit
           - {label: Section Name, name: name, widget: string}
           - {label: Image, name: image, widget: image, required: false, tagname: ""}
           - {label: Section Title, name: title, widget: string}
-          - {label: Intro, name: intro, widget: markdown}
+          - {label: Body, name: body, widget: markdown}
           - {label: Hero Title, name: herotitle, widget: markdown, required: false}
 
       - label: "Prozess"
