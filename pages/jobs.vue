@@ -35,8 +35,14 @@ export default {
     PostPreview,
   },
   asyncData: async ({ app }) => ({
-    posts: await app.$content('/posts').getAll(),
+    posts:  await app.$content('/posts').getAll(),
   }),
+  mounted () {
+    this.$nextTick(() => {
+      this.selectedId = this.$store.getters.loadedData.id
+    })
+  }
+
 };
 </script>
 

@@ -2,15 +2,15 @@
     <div class="wrapper">
         <GlobalHeader class="global-header"/>
 
-        <section id="about">
+        <section id="intro">
             <div class="mood mood--image">
                 <figure>
-                    <img :src="getCorrectImagePath(about.body.image)" alt="venohr consult">
+                    <img :src="getCorrectImagePath(intro.body.image)" alt="venohr consult">
                     <figcaption>something ultra smart...</figcaption>
                 </figure>
             </div>
-            <h2 class="title is-2 primary is-centered">{{about.body.title}}</h2>
-            <pre>{{about}}</pre>
+            <h2 class="title is-2 primary is-centered">{{intro.body.title}}</h2>
+            <pre>{{intro}}</pre>
         </section>
         <section id="services">
             <h2 class="title is-2 primary is-centered">{{ services.body.title }}</h2>
@@ -28,7 +28,31 @@
             </figure>
             <pre>{{process}}</pre>
         </section>
+        <section id="erfahrung">
+            <div class="mood mood--image">
+                <figure>
+                    <img :src="getCorrectImagePath(erfahrung.body.image)" alt="venohr consult">
+                    <figcaption>something ultra smart...</figcaption>
+                </figure>
+            </div>
+            <h2 class="title is-2 primary is-centered">{{erfahrung.body.title}}</h2>
+            <pre>{{erfahrung}}</pre>
+        </section>
+        <section id="about">
+            <div class="mood mood--image">
+                <figure>
+                    <img :src="getCorrectImagePath(about.body.image)" alt="venohr consult">
+                    <figcaption>something ultra smart...</figcaption>
+                </figure>
+            </div>
+            <h2 class="title is-2 primary is-centered">{{about.body.title}}</h2>
+            <pre>{{about}}</pre>
+        </section>
         <section id="contact">
+            <figure>
+                <img :src="getCorrectImagePath(contact.body.image)" alt="venohr consult">
+                <figcaption>some Quote...</figcaption>
+            </figure>
             <h2 class="title is-2 primary is-centered">{{ contact.body.title }}</h2>
             <pre>{{contact}}</pre>
         </section>
@@ -44,6 +68,7 @@ export default {
     GlobalHeader
   },
     asyncData: async ({ app }) => ({
+    intro: await app.$content('/pages').get('/intro'),
     about: await app.$content('/pages').get('/about'),
     services: await app.$content('/pages').get('/services'),
     process: await app.$content('/pages').get('/process'),

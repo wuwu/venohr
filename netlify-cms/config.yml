@@ -54,35 +54,66 @@ collections: # A list of collections the CMS should be able to edit
         delete: false
         file: "content/pages/contact.yml"
         fields:
+          - {label: Section Name, name: name, widget: string}
           - {label: "Image", name: "image", widget: "image", required: false, tagname: ""}
           - {label: Title, name: title, widget: string}
           - {label: Intro, name: intro, widget: markdown}
 
-      - label: "Prozess"
-        name: "prozess"
+      - label: "About Yella"
+        name: "about"
         delete: false
-        file: "content/pages/process.yml"
+        file: "content/pages/erfahrung.yml"
         fields:
-          - {label: "Image", name: "image", widget: "image", required: false, tagname: ""}
-          - {label: Title, name: title, widget: string}
-          - {label: Intro, name: intro, widget: markdown}
+          - {label: Section Name, name: name, widget: string}
+          - {label: Image, name: image, widget: image, required: false, tagname: ""}
+          - {label: Profile Image, name: profileimage, widget: image, required: false, tagname: ""}
+          - {label: Section Title, name: title, widget: string}
+          - {label: Body, name: body, widget: markdown}
+          - {label: Hero Title, name: herotitle, widget: markup, required: false}
+
+
+      - label: "Erfahrung"
+        name: "erfahrung"
+        delete: false
+        file: "content/pages/erfahrung.yml"
+        fields:
+          - {label: Section Name, name: name, widget: string}
+          - {label: Image, name: image, widget: image, required: false, tagname: ""}
+          - {label: Section Title, name: title, widget: string}
+          - {label: Body, name: body, widget: markdown}
+          - {label: Hero Title, name: herotitle, widget: markup, required: false}
+
 
       - label: "Services"
         name: "services"
         delete: false
         file: "content/pages/services.yml"
         fields:
-          - {label: "Image", name: "image", widget: "image", required: false, tagname: ""}
-          - {label: Title, name: title, widget: string}
+          - {label: Section Name, name: name, widget: string}
+          - {label: Image, name: image, widget: image, required: false, tagname: ""}
+          - {label: Section Title, name: title, widget: string}
           - {label: Intro, name: intro, widget: markdown}
+          - {label: Hero Title, name: herotitle, widget: markup, required: false}
 
-      - label: "About/Intro Page"
-        name: "about"
+      - label: "Prozess"
+        name: "prozess"
         delete: false
-        file: "content/pages/about.yml"
+        file: "content/pages/process.yml"
         fields:
-          - {label: "Image", name: "image", widget: "image", required: false, tagname: ""}
-          - {label: Title, name: title, widget: string}
-          - {label: Subtitle, name: subtitle, widget: string}
+          - {label: Section Name, name: name, widget: string}
+          - {label: Image, name: image, widget: image, required: false, tagname: ""}
+          - {label: Section Title, name: title, widget: string}
           - {label: Body, name: body, widget: markdown}
+          - {label: Hero Title, name: herotitle, widget: markup, required: false}
+      - label: "Intro Page"
+        name: "intro"
+        delete: false
+        file: "content/pages/intro.yml"
+        fields:
+          - {label: Section Name, name: name, widget: string}
+          - {label: Image, name: image, widget: image, required: false, tagname: ""}
+          - {label: Section Title, name: title, widget: string}
+          - {label: Body, name: body, widget: markdown}
+          - {label: Hero Title, name: herotitle, widget: markup, required: false}
+          - {label: Hero Text, name: herotext, widget: text, required: false}
 
