@@ -4,17 +4,13 @@
                 :image="`..${post.image}`"
                 :caption="post.herotitle">
         </hero-image>
-        <div class="content">
             <h4>{{post.name}}</h4>
+        <div class="content">
             <vue-markdown :source="post.herotext"></vue-markdown>
             <h2 class="title is-2 primary is-centered">{{post.title}}</h2>
-            <div class="columns">
-                <div class="column column-profile-pic">
-                        <img :src="`..${post.profileimage}`" alt="Yella Venohr - Executive Search and Consultancy" class="profile-image" width="251px" height="238px" />
-                </div>
-                <div class="column column-content">
-                    <vue-markdown :source="post.body"></vue-markdown>
-                </div>
+            <vue-markdown :source="post.body"></vue-markdown>
+            <img :src="`..${post.image2}`" alt="Yella Venohr - Executive Search and Consultancy" class="image" width="351px" height="39px" />
+            <vue-markdown :source="post.adress"></vue-markdown>
             </div>
         </div>
     </div>
@@ -44,27 +40,18 @@
             margin-bottom: 128px;
         }
     }
+
     .content {
         padding: 0 10px;
         @include tablet {
             padding: 0 64px;
         }
     }
-    .column-profile-pic{
-        flex: 0 0 251px;
-        padding-top: 1rem;
+
+    .image {
+        margin: 16px 0 32px 0;
     }
 
-    .profile-image {
-        width: 251px;
-        height: 238px;
-    }
-    .column-content {
-        padding-left: 10px;
-        @include tablet {
-            padding-left: 32px;
-        }
-    }
     h2 {
         padding: 0 10px;
 
@@ -79,6 +66,7 @@
         font-style: normal;
         text-transform: uppercase;
         font-size: 16px;
+        padding-left: 10px;
     }
     .columns{
         @include tablet {

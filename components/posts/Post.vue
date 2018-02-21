@@ -4,11 +4,11 @@
                 :image="`..${post.image}`"
                 :caption="post.herotitle">
         </hero-image>
-        <div class="content">
             <h4>{{post.name}}</h4>
+        <div class="content">
             <vue-markdown :source="post.herotext"></vue-markdown>
             <h2 class="title is-2 primary is-centered">{{post.title}}</h2>
-            <vue-markdown :source="post.body"></vue-markdown>
+            <vue-markdown :source="post.body" class="body"></vue-markdown>
         </div>
     </div>
 </template>
@@ -57,5 +57,7 @@
         font-style: normal;
         text-transform: uppercase;
         font-size: 16px;
+        padding-left: 10px;
+
     }
 </style>

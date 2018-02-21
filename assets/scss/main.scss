@@ -3,7 +3,7 @@
 
 body {
   font-family: $serif-font;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1.15;
   font-style: italic;
   background: $white;
@@ -24,4 +24,16 @@ img {
 .navigation {
   width: 100vw;
   @include app-margin;
+}
+
+@include tablet {
+  .columns {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  #prozess .body {
+    padding-left: 156px;
+    padding-right: 156px;
+  }
 }
