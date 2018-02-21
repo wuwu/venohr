@@ -7,47 +7,6 @@ media_folder: "static/uploads"
 public_folder: uploads
 
 collections: # A list of collections the CMS should be able to edit
-  - name: "posts" # Used in routes, ie.: /admin/collections/:slug/edit
-    label: "Post" # Used in the UI, ie.: "New Post"
-    folder: "content/posts"
-    slug: "{{year}}-{{slug}}"
-    create: true # Allow users to create new documents in this collection
-    fields: # The fields each document in this collection have
-      - {label: "Title", name: "title", widget: "string", tagname: "h1"}
-      - {label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DD hh:mma"}
-      - {label: "Cover Image", name: "image", widget: "image", required: false, tagname: ""}
-      - {label: "Body", name: "body", widget: "markdown"}
-      - {label: "Job Title", name: "jobtitle", widget: "string"}
-    meta:
-      - {label: "SEO Description", name: "description", widget: "text"}
-
-  - name: "testimonials" # Used in routes, ie.: /admin/collections/:slug/edit
-    label: "Testimonial" # Used in the UI, ie.: "New Post"
-    folder: "content/testimonials"
-    slug: "{{year}}-{{slug}}"
-    create: true # Allow users to create new documents in this collection
-    fields: # The fields each document in this collection have
-      - {label: "Title", name: "title", widget: "string", tagname: "h1"}
-      - {label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DD hh:mma"}
-      - {label: "Cover Image", name: "image", widget: "image", required: false, tagname: ""}
-      - {label: "Body", name: "body", widget: "markdown"}
-      - {label: "Job Title", name: "jobtitle", widget: "string"}
-    meta:
-      - {label: "SEO Description", name: "description", widget: "text"}
-
-  - name: "jobs" # Used in routes, ie.: /admin/collections/:slug/edit
-    label: "Jobs" # Used in the UI, ie.: "New Post"
-    folder: "content/jobs"
-    slug: "{{year}}-{{slug}}"
-    create: true # Allow users to create new documents in this collection
-    fields: # The fields each document in this collection have
-      - {label: "Title", name: "title", widget: "string", tagname: "h1"}
-      - {label: "Job Title", name: "jobtitle", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DD hh:mma"}
-      - {label: "Body", name: "body", widget: "markdown"}
-    meta:
-      - {label: "SEO Description", name: "description", widget: "text"}
-
   - label: "Pages"
     name: "pages"
     files:
