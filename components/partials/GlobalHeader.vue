@@ -35,9 +35,6 @@
 
 <style lang="scss" scoped>
     .branding {
-        padding-top: 32px;
-    }
-    .branding {
         display: flex;
         justify-content: center;
         margin-bottom: 32px;

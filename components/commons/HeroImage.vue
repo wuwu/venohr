@@ -37,23 +37,27 @@
             padding: 0;
         }
         figcaption {
-            color: rgba($white, 0.9);
-            text-align: center;
-            line-height: 34px;
-            font-size: 20px;
-
+            color: rgba($white, 1);
+            text-align: left;
+            line-height: 28px;
+            font-size: 24px;
+            p {
+                margin: 0;
+            }
             @include tablet {
-                font-size: 28px;
+                font-size: 36px;
+                line-height:38px;
                 position: absolute;
                 display: flex;
                 align-items: center;
-                justify-content: center;
+                justify-content: flex-start;
                 top: 0;
-                left: 0;
-                right: 0;
+                left: 32px;
+                right: 32px;
                 bottom: 0;
-                color: rgba($primary, .75);
+                color: rgba($primary, .95);
             }
+
         }
         img {
             width: 100%;
