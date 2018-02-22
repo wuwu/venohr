@@ -8,13 +8,12 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: pkg.name,
+    title: 'venohr consult - executive search',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'title', name: 'title', content: 'Yella Venohr Consult' },
-      { hid: 'description', name: 'description', content: 'missing' },
-      { hid: 'keywords', name: 'keywords', content: 'missing' },
+      { hid: 'description', name: 'description', content: 'ls Expertin für Executive Search helfe ich Ihnen, Führungskräfte und hoch qualifizierte Spezialisten für Ihr Unternehmen zu gewinnen. Bei allen Personalfragen rund um Executive Consultancy berate ich Sie ebenfalls gerne.' },
       { hid: 'google-site-verification', name:'google-site-verification', content: 'missing'}    ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
