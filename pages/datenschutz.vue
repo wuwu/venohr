@@ -10,11 +10,8 @@
 <script>
 
   export default {
-    layout: 'default',
+    layout: 'info',
     name: 'datenschutz',
-    components: {
-      HeroImage
-    },
     asyncData: async ({ app }) => ({
       page: await app.$content('/pages').get('/datenschutz'),
     }),

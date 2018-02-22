@@ -2,7 +2,7 @@
     <div class="wrapper">
         <global-header class="global-header"/>
         <nuxt/>
-        <global-footer class="global-header"/>
+        <global-footer class="global-footer"/>
     </div>
 </template>
 <script>

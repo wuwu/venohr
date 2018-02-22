@@ -10,7 +10,7 @@
 <script>
 
   export default {
-    layout: 'default',
+    layout: 'info',
     name: 'impressum',
     asyncData: async ({ app }) => ({
       page: await app.$content('/pages').get('/impressum'),
