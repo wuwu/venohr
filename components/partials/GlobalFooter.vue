@@ -8,8 +8,8 @@
             <a class="main-menu__link" href="#" v-scroll-to="'#kontakt'">Kontakt</a>
         </div>
       <div class="menu">
-          <nuxt-link to="/disclaimer" class="main-menu__link" >Impressum</nuxt-link>
-          <nuxt-link to="/disclaimer" class="main-menu__link" >Datenschutz</nuxt-link>
+          <nuxt-link to="/impressum" class="main-menu__link" >Impressum</nuxt-link>
+          <nuxt-link to="/datenschutz" class="main-menu__link" >Datenschutz</nuxt-link>
       </div>
   </footer>
 </template>
