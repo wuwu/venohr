@@ -10,6 +10,14 @@ collections: # A list of collections the CMS should be able to edit
   - label: "Pages"
     name: "pages"
     files:
+      - label: "Datenschutz"
+        name: "datenschutz"
+        delete: false
+        file: "content/pages/datenschutz.yml"
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Body, name: body, widget: markdown}
+
       - label: "Impressum"
         name: "impressum"
         delete: false

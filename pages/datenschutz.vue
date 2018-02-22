@@ -1,5 +1,5 @@
 <template>
-    <div id="impressum" class="page">
+    <div id="datenschutz" class="page">
         <div class="content">
             <h2 class="title is-2 primary is-centered" v-html="page.body.title"></h2>
             <vue-markdown :source="page.body.body"></vue-markdown>
@@ -11,9 +11,12 @@
 
   export default {
     layout: 'default',
-    name: 'impressum',
+    name: 'datenschutz',
+    components: {
+      HeroImage
+    },
     asyncData: async ({ app }) => ({
-      page: await app.$content('/pages').get('/impressum'),
+      page: await app.$content('/pages').get('/datenschutz'),
     }),
   };
 </script>
