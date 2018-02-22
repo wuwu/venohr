@@ -2,7 +2,8 @@
     <div class="section">
         <hero-image
                 :image="`..${post.image}`"
-                :caption="post.herotitle">
+                :caption="post.herotitle"
+                :gradient="gradient">
         </hero-image>
             <h4>{{post.name}}</h4>
         <div class="content">
@@ -25,7 +26,8 @@
       post: {
         type: Object,
         required: true
-      }
+      },
+      gradient: String
     }
   }
 </script>

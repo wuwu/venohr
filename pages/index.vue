@@ -1,11 +1,11 @@
 <template>
     <div id="index">
-        <section-post id="intro" :post="postIntro.body"></section-post>
-        <section-post id="prozess" :post="postProzess.body"></section-post>
-        <section-post id="leistung" :post="postLeistung.body"></section-post>
-        <section-post id="erfahrung" :post="postErfahrung.body"></section-post>
-        <section-about id="about" :post="postAbout.body"></section-about>
-        <section-kontakt id="kontakt" :post="postKontakt.body"></section-kontakt>
+        <section-post id="intro" :post="postIntro.body" gradient="gradient1"></section-post>
+        <section-post id="prozess" :post="postProzess.body" gradient="gradient2"></section-post>
+        <section-post id="leistung" :post="postLeistung.body" gradient="gradient3"></section-post>
+        <section-post id="erfahrung" :post="postErfahrung.body" gradient="gradient1"></section-post>
+        <section-about id="about" :post="postAbout.body" gradient="gradient2"></section-about>
+        <section-kontakt id="kontakt" :post="postKontakt.body" gradient="gradient3"></section-kontakt>
     </div>
 </template>
 

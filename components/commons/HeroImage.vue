@@ -1,5 +1,5 @@
 <template>
-    <div class="mood mood--image">
+    <div class="mood mood--image" :class="gradient">
         <figure>
             <img :src="image" alt="venohr consult">
             <figcaption><vue-markdown :source="caption"></vue-markdown></figcaption>
@@ -16,6 +16,9 @@
         required: true
       },
       caption: {
+        type: String
+      },
+      gradient: {
         type: String
       }
     }
@@ -56,5 +59,14 @@
             width: 100%;
             height: auto;
         }
+    }
+    .gradient1 {
+        background: linear-gradient(45deg, $primary 0%, $secondary 92%);
+    }
+    .gradient2 {
+        background: linear-gradient(60deg, $secondary 0%, $primary 100%);
+    }
+    .gradient3 {
+        background: linear-gradient(35deg, $primary 0%,  $secondary 40%, rgba(99,80,153,1) 90%);
     }
 </style>
