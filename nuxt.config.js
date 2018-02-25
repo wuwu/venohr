@@ -12,9 +12,10 @@ module.exports = {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'title', name: 'title', content: 'Yella Venohr Consult' },
-      { hid: 'description', name: 'description', content: 'ls Expertin für Executive Search helfe ich Ihnen, Führungskräfte und hoch qualifizierte Spezialisten für Ihr Unternehmen zu gewinnen. Bei allen Personalfragen rund um Executive Consultancy berate ich Sie ebenfalls gerne.' },
-      { hid: 'google-site-verification', name:'google-site-verification', content: 'missing'}    ],
+      { name: 'title', content: 'Yella Venohr Consult' },
+      { name: 'description', content: 'Als Expertin für Executive Search helfe ich Ihnen, Führungskräfte und hoch qualifizierte Spezialisten für Ihr Unternehmen zu gewinnen. Bei allen Personalfragen rund um Executive Consultancy berate ich Sie ebenfalls gerne.' },
+      { name: 'keywords', content: 'Personalberater,Personalberatung,Executive Search,Direct Search,Headhunter, Headhunting, Profiling, Personalsuche, HR Consultant, Direktsuche, Research, Recruiting, Recruiter, Bewerbermanagement, Führungskräfte, Spezialisten' },
+      { name:'google-site-verification', content: 'missing'}    ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'stylesheet', type: 'text/css', href: 'https://fonts.googleapis.com/css?family=Noto+Serif|Work+Sans:700' }
