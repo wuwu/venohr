@@ -20,12 +20,12 @@ module.exports = {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'stylesheet', type: 'text/css', href: 'https://fonts.googleapis.com/css?family=Noto+Serif|Work+Sans:700' }
     ],
-    script: [
-      {
-        src: 'https://identity.netlify.com/v1/netlify-identity-widget.js',
-        type: 'text/javascript',
-      },
-    ],
+    // script: [
+    //   {
+    //     src: 'https://identity.netlify.com/v1/netlify-identity-widget.js',
+    //     type: 'text/javascript',
+    //   },
+    // ],
   },
 
   /*
@@ -92,21 +92,12 @@ module.exports = {
   nuxtent: {
     content: [
       [
-        'posts',
-        {
-          page: '/posts/_slug',
-          permalink: '/posts/:slug',
-          generate: ['get', 'getAll'],
-          isPost: false,
-        },
-      ],
-      [
         'pages',
         {
           page: '/_slug',
           permalink: '/:slug',
           isPost: false,
-          generate: ['get', 'getAll'],
+          generate: ['get'],
         },
       ],
     ],

@@ -17,7 +17,6 @@
     "@nuxtjs/bulma": "^1.1.0",
     "eslint-plugin-prettier": "^2.6.0",
     "markdown-it": "^8.4.0",
-    "netlify-cms": "^1.0.2",
     "nuxt": "1.0.0-rc11",
     "nuxtent": "latest"
   },
@@ -31,7 +30,6 @@
     "eslint-plugin-promise": "^3.4.1",
     "eslint-plugin-standard": "^2.0.1",
     "node-sass": "^4.7.2",
-    "nuxt-netlify-cms": "^2.0.1",
     "nuxt-sass-resources-loader": "^1.1.1",
     "prettier": "^1.9.1",
     "sass-loader": "^6.0.6",
