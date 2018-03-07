@@ -22,17 +22,9 @@
 
     methods: {
       scrollTop() {
-        const element = document.body
-        const to = 0
-        const duration = 100
-        if (duration < 0) return
-        var difference = to - element.scrollTop
-        var perTick = difference / duration * 2
-
         setTimeout(function () {
-          element.scrollTop = element.scrollTop + perTick
-          scrollTo(element, to, duration - 2)
-        }, 50)
+          window.scroll({top: 0, left: 0, behavior: 'smooth' });
+        }, 400)
       },
       handleScroll() {
         this.scrolled = window.scrollY > 0
