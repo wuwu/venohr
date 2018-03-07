@@ -18,14 +18,14 @@ module.exports = {
       { name:'google-site-verification', content: 'missing'}    ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', type: 'text/css', href: 'https://fonts.googleapis.com/css?family=Noto+Serif|Work+Sans:700' }
+      { rel: 'stylesheet', type: 'text/css', href: 'https://fonts.googleapis.com/css?family=Noto+Serif|Work+Sans:300,400' }
     ],
-    // script: [
-    //   {
-    //     src: 'https://identity.netlify.com/v1/netlify-identity-widget.js',
-    //     type: 'text/javascript',
-    //   },
-    // ],
+    script: [
+      {
+        src: 'https://identity.netlify.com/v1/netlify-identity-widget.js',
+        type: 'text/javascript',
+      },
+    ],
   },
 
   /*
