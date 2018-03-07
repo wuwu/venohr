@@ -2,11 +2,11 @@
 @import "abstracts/mixins";
 
 body {
-  font-family: $serif-font;
+  font-family: $sans-font;
   font-size: 18px;
   line-height: 1.15;
-  font-style: italic;
   background: $white;
+  font-weight: 300;
   margin: 0 auto;
 }
 img {
@@ -20,6 +20,13 @@ img {
     text-align: right;
   }
 }
+
+.title {
+  font-family: $sans-font;
+  font-weight: 300;
+  font-style: normal;
+}
+
 
 .navigation {
   width: 100vw;
