@@ -6,6 +6,7 @@
         <section-post id="erfahrung" :post="postErfahrung.body" gradient="gradient1"></section-post>
         <section-about id="about" :post="postAbout.body" gradient="gradient2"></section-about>
         <section-kontakt id="kontakt" :post="postKontakt.body" gradient="gradient3"></section-kontakt>
+        <button-scroll-top></button-scroll-top>
     </div>
 </template>
 
@@ -13,13 +14,15 @@
 import SectionPost from '~/components/posts/Post'
 import SectionAbout from '~/components/posts/PostAbout'
 import SectionKontakt from '~/components/posts/PostKontakt'
+import ButtonScrollTop from '~/components/partials/ButtonScrollTop.vue'
 
 export default {
   name: 'front',
   components: {
     SectionPost,
     SectionAbout,
-    SectionKontakt
+    SectionKontakt,
+    ButtonScrollTop
   },
   asyncData: async ({ app }) => ({
       postIntro: await app.$content('/pages').get('/intro'),
