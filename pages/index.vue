@@ -18,6 +18,11 @@ import ButtonScrollTop from '~/components/partials/ButtonScrollTop.vue'
 
 export default {
   name: 'front',
+  head () {
+    return {
+      title: 'Yella Venohr Consult - Executive Search'
+    }
+  },
   components: {
     SectionPost,
     SectionAbout,
