@@ -2,7 +2,7 @@ const pkg = require('./package');
 const { resolve } = require('path');
 
 module.exports = {
-  mode: 'spa',
+  mode: 'universal',
 
   /*
   ** Headers of the page
