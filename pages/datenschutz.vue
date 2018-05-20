@@ -15,6 +15,12 @@
     asyncData: async ({ app }) => ({
       page: await app.$content('/pages').get('/datenschutz'),
     }),
+    methods: {
+      disableTracking () {
+        this.$ga.disable()
+        // from now on analytics is disabled
+      }
+    }
   };
 </script>
 <style lang="scss" scoped>
