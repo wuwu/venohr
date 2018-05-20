@@ -9,7 +9,7 @@
         </div>
       <div class="menu">
           <nuxt-link to="/impressum" class="main-menu__link" >Impressum</nuxt-link>
-          <nuxt-link to="/datenschutz" class="main-menu__link" >Datenschutz</nuxt-link>
+          <nuxt-link to="/datenschutzerklaerung" class="main-menu__link" >Datenschutz</nuxt-link>
       </div>
   </footer>
 </template>
