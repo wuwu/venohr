@@ -54,10 +54,15 @@ module.exports = {
   modules: [
     'nuxt-netlify-cms',
     'nuxtent',
-    ['@nuxtjs/google-analytics', { id: 'UA-115328935-1' }],
+    '@nuxtjs/google-analytics',
     ['nuxt-sass-resources-loader', ['./assets/scss/abstracts/_settings.scss', './assets/scss/abstracts/_mixins.scss']]
   ],
-
+  'google-analytics': {
+    id: 'UA-115328935-1',
+    debug: {
+      enabled: false
+    }
+  },
   /*
   ** Build configuration
   */
