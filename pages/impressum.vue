@@ -15,7 +15,8 @@
     asyncData: async ({ app }) => ({
       page: await app.$content('/pages').get('/impressum'),
     }),
-  };
+  }
+
 </script>
 <style lang="scss" scoped>
 
