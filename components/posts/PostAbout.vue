@@ -57,7 +57,7 @@
 
     .profile-image {
         width: 251px;
-        height: 238px;
+        height: 251px;
     }
     .column-content {
         padding-left: 10px;
