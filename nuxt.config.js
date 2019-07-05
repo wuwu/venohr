@@ -100,7 +100,7 @@ module.exports = {
       [
         'pages',
         {
-          page: '/posts/_slug',
+          page: '/_slug',
           permalink: '/:slug',
           isPost: false,
           generate: ['get'],
