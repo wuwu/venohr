@@ -23,7 +23,7 @@
     "netlify-cms": "^1.0.2",
     "node-sass": "^4.7.2",
     "nuxt": "~2.2.0",
-    "nuxt-netlify-cms": "^2.0.1",
+    "nuxt-netlify-cms": "^4.0.0",
     "nuxt-sass-resources-loader": "^1.1.1",
     "nuxtdown": "^2.0.3",
     "prettier": "^1.9.1",
