@@ -27,6 +27,7 @@
     "nuxt-netlify-cms": "^4.0.0",
     "nuxt-sass-resources-loader": "^1.1.1",
     "nuxtdown": "^2.0.3",
+    "nuxtent": "^1.4.1",
     "prettier": "^1.9.1",
     "sass-loader": "^6.0.6",
     "url-loader": "^0.6.2",
