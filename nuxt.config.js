@@ -52,7 +52,7 @@ module.exports = {
   ** Nuxt.js modules
   */
   modules: [
-    ['nuxt-sass-resources-loader', ['./assets/scss/abstracts/_settings.scss', './assets/scss/abstracts/_mixins.scss']],
+    '@nuxtjs/style-resources',
     'nuxt-netlify-cms',
     'nuxtent',
     '@nuxtjs/google-analytics',
@@ -63,6 +63,9 @@ module.exports = {
       enabled: false
     }
   },
+  styleResources: {
+    scss: ['./assets/scss/abstracts/_settings.scss', './assets/scss/abstracts/_mixins.scss']
+  },
   /*
   ** Build configuration
   */
@@ -71,6 +74,9 @@ module.exports = {
       plugins: {
         'postcss-custom-properties': false
       }
+    },
+    filenames: {
+      chunk: ({ isDev }) => isDev ? '[name].js' : '[id].[chunkhash].js'
     },
     /*
     ** Run ESLint on save
