@@ -6,8 +6,8 @@
   "private": true,
   "scripts": {
     "dev": "nuxt",
-    "build": "nuxt build",
-    "start": "nuxt start",
+    "build": "nuxt build --universal",
+    "start": "nuxt start --spa",
     "generate": "nuxt generate",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "precommit": "npm run lint"
@@ -16,24 +16,16 @@
     "@nuxtjs/axios": "^5.3.1",
     "@nuxtjs/bulma": "^1.1.0",
     "@nuxtjs/google-analytics": "^2.0.2",
+    "cross-env": "^5.0.1",
+    "dotenv": "^8.0.0",
     "eslint-plugin-prettier": "^2.6.0",
     "markdown-it": "^8.4.0",
     "netlify-cms": "^1.0.2",
-    "nuxt": "~2.2.0",
-    "nuxtdown": "^2.0.3"
-  },
-  "devDependencies": {
-    "babel-eslint": "^8.2.1",
-    "cross-env": "^5.0.1",
-    "dotenv": "^5.2.0",
-    "eslint": "^4.15.0",
-    "eslint-config-standard": "^6.2.1",
-    "eslint-plugin-html": "^2.0.0",
-    "eslint-plugin-promise": "^3.4.1",
-    "eslint-plugin-standard": "^2.0.1",
     "node-sass": "^4.7.2",
+    "nuxt": "~2.2.0",
     "nuxt-netlify-cms": "^2.0.1",
     "nuxt-sass-resources-loader": "^1.1.1",
+    "nuxtdown": "^2.0.3",
     "prettier": "^1.9.1",
     "sass-loader": "^6.0.6",
     "url-loader": "^0.6.2",
@@ -43,6 +35,14 @@
     "vue-server-renderer": "^2.4.4",
     "vue-style-loader": "^3.0.3",
     "vue-template-compiler": "^2.4.4"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.1",
+    "eslint": "^4.15.0",
+    "eslint-config-standard": "^6.2.1",
+    "eslint-plugin-html": "^2.0.0",
+    "eslint-plugin-promise": "^3.4.1",
+    "eslint-plugin-standard": "^2.0.1"
   },
   "config": {
     "nuxt": {
